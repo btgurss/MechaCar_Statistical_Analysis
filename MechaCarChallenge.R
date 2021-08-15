@@ -29,7 +29,7 @@ plt + geom_point()
 #Calculate correlation coefficient
 cor(MechaTable$ground_clearance, MechaTable$mpg)
 
-#Creating corellation matrix
+#Creating correlation matrix
 used_matrix <- as.matrix(MechaTable[,c("mpg", "vehicle_length", "vehicle_weight", "spoiler_angle", "AWD", "ground_clearance")])
 cor(used_matrix)
 
@@ -47,12 +47,13 @@ plt <- ggplot(CoilTable, aes(x=Manufacturing_Lot, y=PSI))
 #Adding boxplot
 plt + geom_boxplot()
 
+#Performing a t.test on the entire population to determine statistical significance
 CoilSample <- CoilTable %>% sample_n(50)
 t.test(CoilSample$PSI, mu=mean(CoilTable$PSI))
 
-#Preparing each t.test
+#Preparing and performing each t.test to compare the lots to the mean of entire population
 Lot1 <- subset(CoilTable, Manufacturing_Lot=="Lot1")
-t.test(Lot1$PSI, mu=1500)
+t.test(Lot1$PSI, mu=mean(CoilTable$PSI))
 
 Lot2 <- subset(CoilTable, Manufacturing_Lot=="Lot2")
 t.test(Lot2$PSI, mu=mean(CoilTable$PSI))
