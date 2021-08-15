@@ -32,13 +32,22 @@ The mean and median of lots 1 and 2 are almost identical at 1500.  Lot 3 mean an
 
 ### T-Tests on Suspension Coils
 
+The next section uses t test to determine the statistical significance of the differences in the PSI from one lot to the next.  The first test compared a random sample of the total population to the mean of the total population.  The next three tests all compare the different lots to the total population.  The results are shown below:
+
 ![Summary-t-test.png](images/Summary-t-test.png)
 
+This test has a p-value of 0.6893.  A p-value that is this high indicates that there are some difference between a randomly selected sample and the original population and that those differences are more than likely not by chance.
+
 ![Lot1t-test.png](images/Lot1t-test.png)
+This test has a p-value that is extremely low.  This indicates that there is very little statistical difference between the data points of lot 1 and the population mean.
 
 ![Lot2t-test.png](images/Lot2t-test.png)
+This p-value is also low (p=.0005).  This is well below the usual statistical marker of p=.05.  It tells us that the data points here are not statistically different than the population mean.
 
 ![Lot3t-test.png](images/Lot3t-test.png)
+This p-value is much higher (p=.1589).  This indicates that the values in lot 3 could be found to be statistically different than the total population mean.  This is consistent with all other test we have run on this data set.  It also shows that something may be wrong with lot 3 production.
+
+
 
 
 
