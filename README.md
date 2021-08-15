@@ -30,5 +30,16 @@ The mean and median of lots 1 and 2 are almost identical at 1500.  Lot 3 mean an
 ![BoxPlot2.png](images/BoxPlot2.png)
 
 
+### T-Tests on Suspension Coils
+
+![Summary-t-test.png](images/Summary-t-test.png)
+
+![Lot1t-test.png](images/Lot1t-test.png)
+
+![Lot2t-test.png](images/Lot2t-test.png)
+
+![Lot3t-test.png](images/Lot3t-test.png)
+
+
 
 
