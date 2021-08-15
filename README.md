@@ -55,7 +55,25 @@ This p-value is also low (p=.0005).  This is well below the usual statistical ma
 This p-value is much higher (p=.1589).  This indicates that the values in lot 3 could be found to be statistically different than the total population mean.  This is consistent with all other test we have run on this data set.  It also shows that something may be wrong with lot 3 production.
 
 
+## Study Design: MechaCar Competition
 
+I am now tasked with creating a study to investigate my MechaCar compared to other cares in the competition.
 
+### Description
+I will be testing the highway fuel efficiency and the cost of each car at the competition.  I will look into the cost of building each car as well as how well it runs in a highway situation.
+
+#### Null Hypothesis
+The amount of money spent on a car has no effect on the highway fuel efficiency.
+
+#### Alternative Hypothesis
+If we spend more money building a car, that care will have increased fuel efficiency when driven on the highway.
+
+#### Needed Data
+In order to determine the correlation between cost and fuel efficiency, we will need two different set of information:
+1. How much each car costs
+2. How many miles per gallon the car performs at on the highway
+
+#### Test
+In order to determine if the hypothesis is true, I would run a linear regression model with the two variables.  I would look at the r squared value to determine the impact.  If the data comes in a larger format (similar to the one in section 1) I would also run a multiple regression analysis to determine if other factors may also be correlated.
 
 
