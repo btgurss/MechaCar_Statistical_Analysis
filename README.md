@@ -19,9 +19,15 @@ The summary of the data also shows a multiple R-squred value of .7149.  This tel
 ### Summary Statistics on Suspension Coils
 The next data set that I needed to analyze gives information about the PSI of different coils that were manufactured in 3 different lots.  The goal of this anaylsis was to create a summary statistics table with mean, median, variance, and standard deviation for all of the data and for each lot individually.  After these tables are created, I need to use the information to make some decisions.  Here are both created tables:
 
+![Total_Lots_Summary.png](images/Total_Lots_Summary.png)
+
 The mean and median of the PSI is just about 1500 for all coils.  The variance is about 62.3 which is below the allowable 100 PSI required by the design specifications.
 
+![Ind_Lots_Summary.png](images/Ind_Lots_Summary.png)
+
 The mean and median of lots 1 and 2 are almost identical at 1500.  Lot 3 mean and median are a little bit lower and further apart.  It is also noticed that Lot 3 does not meet the design specifications of needing a variance under 100 PSI.  Lot 3 PSI is at 170.  This high variance probably causes the variance on the entire lot to increase as well.  The variance of 62 would go down greatly if lot 3 data was not included.  When I created a box and whisker plot of the three lots it shows a lot of outliers in the Lot 3 information.  Lots 1 and 2 have very small variability and few to no outliers, while lot 3 has a wide range of PSI data.  This would tell me that something needs to be fixed in Lot 3.
+
+![BoxPlot2.png](images/BoxPlot2.png)
 
 
 
