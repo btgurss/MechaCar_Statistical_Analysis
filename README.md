@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Overview/Purpose
-In this challenge, we are helping Jeremy analyze and interpret data using R programming.  This data will be used to help his company (AutosRUs) make decisions about their services. 
+I am using R programming run two analyses.  The first analysis uses linear regression to find correlations between different car features.  The second analysis uses t-tests to find efficiency of different manufacturing lots for suspension coils.  This data could be used to help companies make important decisions about their services. 
 
 ### Linear Regression to Predict MPG
 In this analysis, I was given a data set of 50 cars.  Each car had its height, weight, mpg, spoiler angle, ground clearance, and AWD information provided.  I put each variable into a correlation matrix to quickly determine if any correlation could be determines.  Here is the resulting matrix:
