@@ -8,7 +8,19 @@ In this analysis, I was given a data set of 50 cars.  Each car had its height, w
 
 ![Correlation_Matrix.png](images/Correlation_Matrix.png)
 
-Each number in the matrix shows the amount of correlation between the variables in the rows and columns.  The mpg has a weak correlation with ground clearance (r value of 0.33) and a moderate correlation with the vehicle length (r value of .61).  These are the only two variables that provided a non-random amount of variance to the mpg values in the dataset.  When graphs are produced individually, the correlations become more apparent.  If we create a linear regression model for each of these variables individually, they produce coefficients that can be used to create equations in slope-intercept form.  These equations have a slope of 4.67 for the vehicle length and 2.02 for the ground clearance.  When we combine this information with the r values, we can state that the slope will be non-zero.  Our confidence in that statement is much greater with the vehicle length because of the higher r value.  
+Each number in the matrix shows the amount of correlation between the variables in the rows and columns.  The mpg has a weak correlation with ground clearance (r value of 0.33) and a moderate correlation with the vehicle length (r value of .61).  These are the only two variables that provided a non-random amount of variance to the mpg values in the dataset.  When graphs are produced individually, the correlations become more apparent.  
+
+![images/Scatterplot_VehicleLengthVSmpg.png](images/Scatterplot_VehicleLengthVSmpg.png)
+
+The graph above is a representation of the correlation of the vehicle length and miles per gallon.  It shows a moderate relationship.  The line of best fit has a slope of 4.67, meaning that for every 1 longer the car is the vehicle would get 4.67 more miles per gallon. The r squared value of this dataset sits at .37.
+
+![images/Scatterplot_GroundClearanceVSmpg.png](images/Scatterplot_GroundClearanceVSmpg.png)
+
+The graph above is a representation of the correlcation of the ground clearance and miles per gallon.  It shows weak relationship.  The line of best fit has a slope of 2.02, meaning that for every 1 foot about the ground the vehicle would get 2.20 more mile per gallon.  The r squared value of this dataset sits at .11. 
+
+When we combine this information with the r values, we can state that the slope will be non-zero.  Our confidence in that statement is much greater with the vehicle length because of the higher r value.  Neither of the r or r squared values are high enough for me to be extremely confident in predictions.
+
+
 Next, I did a multiple linear regression on the data.  It is presented here:
 
 ![Multiple_Regression_Mecha_Cars.png](images/Multiple_Regression_Mecha_Cars.png)
@@ -57,7 +69,7 @@ This p-value is much higher (p=.1589).  This indicates that the values in lot 3 
 
 ## Study Design: MechaCar Competition
 
-I am now tasked with creating a study to investigate my MechaCar compared to other cares in the competition.
+I was then tasked with creating a study to investigate my MechaCar compared to other cares in the competition.
 
 ### Description
 I will be testing the highway fuel efficiency and the cost of each car at the competition.  I will look into the cost of building each car as well as how well it runs in a highway situation.
